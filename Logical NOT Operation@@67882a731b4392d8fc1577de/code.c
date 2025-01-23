@@ -4,11 +4,11 @@ int main() {
 	scanf("%f",&a);
 	float b;
 	scanf("%f",&b);
-	if (a<0){
-		printf("True");
+	if (a>0){
+		printf("False");
 	}
 	else {
-		printf("False");
+		printf("True");
 	}
 	
     
