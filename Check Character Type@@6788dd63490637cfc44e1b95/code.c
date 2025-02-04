@@ -4,8 +4,7 @@
 int main() {
     char ch;
 
-    // Get user input
-    printf("Enter a character: ");
+    
     scanf("%c", &ch);
 
     // Convert to lowercase to handle uppercase vowels
