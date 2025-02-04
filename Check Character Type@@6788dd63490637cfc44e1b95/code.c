@@ -1,19 +1,32 @@
 #include <stdio.h>
+#include <ctype.h>
+
 int main() {
     char ch;
-    scanf("%c",&ch);
-    char sh = tolower(ch);
-    if ((sh=='a') || (sh=='e') || (sh=='i') || (sh=='o') || (sh=='u')){
-        printf("Vowel");
+
+    // Get user input
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    // Convert to lowercase to handle uppercase vowels
+    char lowerCh = tolower(ch);
+
+    // Check if it's a vowel
+    if (lowerCh == 'a' || lowerCh == 'e' || lowerCh == 'i' || lowerCh == 'o' || lowerCh == 'u') {
+        printf("Vowel\n");
     }
-    else if(isalpha(ch)){
-        printf("Consonant");
+    // Check if it's a consonant (must be a letter but not a vowel)
+    else if (isalpha(ch)) {
+        printf("Consonant\n");
     }
-    else if (isdigit(ch)){
-        printf("Digit");
+    // Check if it's a digit
+    else if (isdigit(ch)) {
+        printf("Digit\n");
     }
-    else{
-        printf("Special Character");
+    // If it's not a letter or digit, it's a special character
+    else {
+        printf("Special Character\n");
     }
+
     return 0;
 }
