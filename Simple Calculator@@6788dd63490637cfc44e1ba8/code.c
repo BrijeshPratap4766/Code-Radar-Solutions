@@ -11,17 +11,4 @@ int main() {
         
         case '*':printf("%d",a*b);break;
 
-        case '/':
-            if (b!=0){
-                print("%d",a/b);
-            }
-            else{
-                printf("Error");
-            }    
-            break;
-
-        default :printf("Error");
-    }
-
-    return 0;
-}
+        case '/':printf("%d",a/b);break;
