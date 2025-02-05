@@ -5,10 +5,8 @@ int main() {
     double a, b;
 
     
-    scanf(" %c", &op);
-    
     scanf("%lf %lf", &a, &b);
-
+    scanf("%c",&op);
     if (op == '+')
         printf(" %.2lf\n", a + b);
     else if (op == '-')
