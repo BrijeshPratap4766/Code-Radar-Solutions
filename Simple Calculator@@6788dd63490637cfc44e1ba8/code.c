@@ -5,13 +5,23 @@ int main() {
     char op;
     scanf("%c",&op);
     switch(op){
-        case '+':printf("%d",a+b);break;
+        case '+':
+            printf("%d",a+b);
+            break;
         
-        case '-':printf("%d",a-b);break;
+        case '-':
+            printf("%d",a-b);
+            break;
         
-        case '*':printf("%d",a*b);break;
+        case '*':
+            printf("%d",a*b);
+            break;
 
-        case '/':printf("%d",a/b);break;
+        case '/':
+            printf("%d",a/b);
+            break;
+        default:
+            printf("Error")
 
     }
     return 0;
