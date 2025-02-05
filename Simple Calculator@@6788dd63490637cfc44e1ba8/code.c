@@ -1,29 +1,25 @@
-#include <stdio.h>
+  #include <stdio.h>
+
 int main() {
-    int a,b;
-    sacnf("%d%d",&a,&b);
     char op;
-    scanf("%c",&op);
-    switch(op){
-        case '+':
-            printf("%d",a+b);
-            break;
-        
-        case '-':
-            printf("%d",a-b);
-            break;
-        
-        case '*':
-            printf("%d",a*b);
-            break;
+    double a, b;
 
-        case '/':
-            printf("%d",a/b);
-            break;
-        default:
-            printf("Error");
+    
+    scanf(" %c", &op);
+    
+    scanf("%lf %lf", &a, &b);
 
-    }
+    if (op == '+')
+        printf(" %.2lf\n", a + b);
+    else if (op == '-')
+        printf(" %.2lf\n", a - b);
+    else if (op == '*')
+        printf("%.2lf\n", a * b);
+    else if (op == '/' && b != 0)
+        printf(" %.2lf\n", a / b);
+    else
+        printf("Error");
+
     return 0;
-
-}    
+}
+ 
