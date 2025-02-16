@@ -7,12 +7,13 @@ int main(){
             print("  ");
             
         }
-        printf("\n");
-    }    
-    for (int k=1,k>=i,k++){
-        printf("* ");
-    }    
         
+     
+        for (int k=1,k>=i,k++){
+            printf("* ");
+        }    
+        printf("\n");
+    }
     
     
 
