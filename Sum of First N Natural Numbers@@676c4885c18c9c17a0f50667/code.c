@@ -6,7 +6,7 @@ int main(){
    for(int i=0;i<=n;i++){
 
     
-    a=i+1;
+    a=a+i;
     
 
    }
